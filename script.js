@@ -87,7 +87,7 @@ function mostrarActividadesARealizar( actividades ){
     const opcionesEl = document.querySelector(".opciones");
     for( let act of actividades ){
         let opcionEl = document.createElement("li");
-        opcionEl.innerText = `Actividad ${act}`;
+        opcionEl.innerText = `Opción ${act}`;
         opcionesEl.appendChild(opcionEl);
     }
 }
