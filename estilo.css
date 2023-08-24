@@ -1,0 +1,88 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+header{
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 20px auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+hr{
+    height: 1px;
+    width: 100%;
+}
+
+main{
+    padding: 3%;
+}
+
+form{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    margin: 0 auto;
+}
+
+form input, form label{
+    width: 100%;
+}
+
+form input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+form label{
+    text-align: center;
+    /* color: #2196f3; */
+    font-weight: bold;
+}
+
+form button{
+    font-size: 2rem;
+    padding: 15px 30px;
+    cursor: pointer;
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.resultado-opciones-asignadas{
+    padding: 20px;
+    margin: 30px 20px;
+    border: 5px solid;
+    background-color: lightblue;
+}
+
+.oculto{
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    form {
+        width: 40%;
+    }
+  }

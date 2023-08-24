@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular actividades a realizar</title>
+    <script defer src="./script.js"></script>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calcular actividades a realizar</h1>
+        <hr>
+    </header>
+    <main>
+        <form onsubmit="return obtenerActividadesARealizar()">
+            <label for="nia">NIA</label>
+            <input type="text" name="nia" id="nia" required>
+            <label for="id_actividad">Identificador de la actividad</label>
+            <input type="text" name="id_actividad" id="id_actividad" required>
+            <label for="canitdad_opciones">Cantidad total de actividades</label>
+            <input type="number" name="canitdad_opciones" id="canitdad_opciones" required>
+            <label for="numero_opciones_realizar">Número de actividades a realizar</label>
+            <input type="number" name="numero_opciones_realizar" id="numero_opciones_realizar" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="resultado-opciones-asignadas oculto">
+            <div class="texto">Las actividades que debes realizar son:</div>
+            <ul class="opciones"></ul>
+        </div>
+    </main>
+</body>
+</html>
